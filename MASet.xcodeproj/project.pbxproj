@@ -18,9 +18,13 @@
 		196C205428D4C77700D163D9 /* MACatsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C205328D4C77700D163D9 /* MACatsTests.m */; };
 		196C205628D4C77700D163D9 /* MACats.h in Headers */ = {isa = PBXBuildFile; fileRef = 196C204628D4C77700D163D9 /* MACats.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		196C205928D4C77700D163D9 /* MACats.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 196C204428D4C77600D163D9 /* MACats.framework */; };
-		196C205A28D4C77700D163D9 /* MACats.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 196C204428D4C77600D163D9 /* MACats.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		196C205A28D4C77700D163D9 /* MACats.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 196C204428D4C77600D163D9 /* MACats.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		196C207E28D4CC8500D163D9 /* MAProxyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C207C28D4CC8500D163D9 /* MAProxyController.m */; };
 		196C208528D4CE9600D163D9 /* MAProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C208428D4CE9600D163D9 /* MAProxy.m */; };
+		196C208D28D4D61500D163D9 /* UIButton+BlockCat.h in Headers */ = {isa = PBXBuildFile; fileRef = 196C208B28D4D61500D163D9 /* UIButton+BlockCat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		196C208E28D4D61500D163D9 /* UIButton+BlockCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C208C28D4D61500D163D9 /* UIButton+BlockCat.m */; };
+		196C209D28D4DAEF00D163D9 /* MABlockButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 196C209B28D4DAEF00D163D9 /* MABlockButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		196C209E28D4DAEF00D163D9 /* MABlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C209C28D4DAEF00D163D9 /* MABlockButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +105,10 @@
 		196C207D28D4CC8500D163D9 /* MAProxyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAProxyController.h; sourceTree = "<group>"; };
 		196C208328D4CE9600D163D9 /* MAProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAProxy.h; sourceTree = "<group>"; };
 		196C208428D4CE9600D163D9 /* MAProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAProxy.m; sourceTree = "<group>"; };
+		196C208B28D4D61500D163D9 /* UIButton+BlockCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+BlockCat.h"; sourceTree = "<group>"; };
+		196C208C28D4D61500D163D9 /* UIButton+BlockCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BlockCat.m"; sourceTree = "<group>"; };
+		196C209B28D4DAEF00D163D9 /* MABlockButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MABlockButton.h; sourceTree = "<group>"; };
+		196C209C28D4DAEF00D163D9 /* MABlockButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MABlockButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +227,10 @@
 			children = (
 				196C204628D4C77700D163D9 /* MACats.h */,
 				196C204728D4C77700D163D9 /* Info.plist */,
+				196C208B28D4D61500D163D9 /* UIButton+BlockCat.h */,
+				196C208C28D4D61500D163D9 /* UIButton+BlockCat.m */,
+				196C209B28D4DAEF00D163D9 /* MABlockButton.h */,
+				196C209C28D4DAEF00D163D9 /* MABlockButton.m */,
 			);
 			path = MACats;
 			sourceTree = "<group>";
@@ -247,6 +259,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				196C205628D4C77700D163D9 /* MACats.h in Headers */,
+				196C208D28D4D61500D163D9 /* UIButton+BlockCat.h in Headers */,
+				196C209D28D4DAEF00D163D9 /* MABlockButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +482,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196C208E28D4D61500D163D9 /* UIButton+BlockCat.m in Sources */,
+				196C209E28D4DAEF00D163D9 /* MABlockButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

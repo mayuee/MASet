@@ -8,6 +8,8 @@
 #import "ViewController.h"
 #import "MAProxyController.h"
 
+#import <MACats/MACats.h>
+
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic, strong) NSMutableArray *dataArray;
@@ -17,10 +19,32 @@
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, tableView.bounds.size.width, 50)];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor yellowColor];
+    button.frame = CGRectMake(100, 0, 50, 50);
+    button.clickBlock = ^(UIButton * _Nonnull button) {
+        NSLog(@"UIButton clickBlock");
+    };
+    [headerView addSubview:button];
+    
+    
+    MABlockButton *blockButton = [[MABlockButton alloc] initWithBlock:^(UIButton * _Nonnull button) {
+        NSLog(@"MABlockButton clickBlock");
+    }];
+    blockButton.backgroundColor = [UIColor redColor];
+    blockButton.frame = CGRectMake(200, 0, 50, 50);
+    [headerView addSubview:blockButton];
+    
+    tableView.tableHeaderView = headerView;
+    
     tableView.delegate = self;
     tableView.dataSource = self;
     self.tableView = tableView;
