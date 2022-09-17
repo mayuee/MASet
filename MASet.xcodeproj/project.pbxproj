@@ -25,6 +25,8 @@
 		196C208E28D4D61500D163D9 /* UIButton+BlockCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C208C28D4D61500D163D9 /* UIButton+BlockCat.m */; };
 		196C209D28D4DAEF00D163D9 /* MABlockButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 196C209B28D4DAEF00D163D9 /* MABlockButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		196C209E28D4DAEF00D163D9 /* MABlockButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C209C28D4DAEF00D163D9 /* MABlockButton.m */; };
+		196C20A928D4E22C00D163D9 /* UIView+MACornerCat.h in Headers */ = {isa = PBXBuildFile; fileRef = 196C20A728D4E22C00D163D9 /* UIView+MACornerCat.h */; };
+		196C20AA28D4E22C00D163D9 /* UIView+MACornerCat.m in Sources */ = {isa = PBXBuildFile; fileRef = 196C20A828D4E22C00D163D9 /* UIView+MACornerCat.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +111,8 @@
 		196C208C28D4D61500D163D9 /* UIButton+BlockCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+BlockCat.m"; sourceTree = "<group>"; };
 		196C209B28D4DAEF00D163D9 /* MABlockButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MABlockButton.h; sourceTree = "<group>"; };
 		196C209C28D4DAEF00D163D9 /* MABlockButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MABlockButton.m; sourceTree = "<group>"; };
+		196C20A728D4E22C00D163D9 /* UIView+MACornerCat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+MACornerCat.h"; sourceTree = "<group>"; };
+		196C20A828D4E22C00D163D9 /* UIView+MACornerCat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+MACornerCat.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,8 @@
 				196C208C28D4D61500D163D9 /* UIButton+BlockCat.m */,
 				196C209B28D4DAEF00D163D9 /* MABlockButton.h */,
 				196C209C28D4DAEF00D163D9 /* MABlockButton.m */,
+				196C20A728D4E22C00D163D9 /* UIView+MACornerCat.h */,
+				196C20A828D4E22C00D163D9 /* UIView+MACornerCat.m */,
 			);
 			path = MACats;
 			sourceTree = "<group>";
@@ -259,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				196C205628D4C77700D163D9 /* MACats.h in Headers */,
+				196C20A928D4E22C00D163D9 /* UIView+MACornerCat.h in Headers */,
 				196C208D28D4D61500D163D9 /* UIButton+BlockCat.h in Headers */,
 				196C209D28D4DAEF00D163D9 /* MABlockButton.h in Headers */,
 			);
@@ -482,6 +489,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				196C20AA28D4E22C00D163D9 /* UIView+MACornerCat.m in Sources */,
 				196C208E28D4D61500D163D9 /* UIButton+BlockCat.m in Sources */,
 				196C209E28D4DAEF00D163D9 /* MABlockButton.m in Sources */,
 			);
